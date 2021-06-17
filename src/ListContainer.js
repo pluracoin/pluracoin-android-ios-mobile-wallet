@@ -1,0 +1,33 @@
+// Copyright (C) 2018, Zpalmtree
+//
+// Please see the included LICENSE file for more information.
+
+import * as React from 'react';
+
+import { StyleSheet, ScrollView } from 'react-native';
+
+import { legacyRNElementsColors } from './Styles';
+
+//containerStyle={{backgroundColor:"blue"}}
+
+const styles = StyleSheet.create({
+    listContainer: {
+        marginTop: 20,
+        borderTopWidth: 1,
+        borderColor: legacyRNElementsColors.greyOutline,
+    },
+});
+
+export default class ListContainer extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return(
+            <ScrollView style={[styles.listContainer, this.props.style]}>
+                {this.props.children}
+            </ScrollView>
+        );
+    }
+}
