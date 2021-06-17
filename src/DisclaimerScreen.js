@@ -14,15 +14,16 @@ import { BottomButton } from './SharedComponents';
 export class DisclaimerScreen extends React.Component {
     static navigationOptions = {
         title: '',
+        headerTransparent: true,
     };
 
     constructor(props) {
         super(props);
 
         this.state = {
-            feeAccepted: true,
-            keyOwnershipAccepted: true,
-            warrantyAccepted: true,
+            feeAccepted: false,
+            keyOwnershipAccepted: false,
+            warrantyAccepted: false,
         }
     }
 
@@ -71,7 +72,7 @@ export class DisclaimerScreen extends React.Component {
                                 fontSize: 15,
                                 color: this.props.screenProps.theme.slightlyMoreVisibleColour,
                             }}>
-                                I understand that the fee for sending a transaction is 0.25% but no more than 10 PLURA.
+                                I understand that there is a small fee for sending a transaction via masternode but no more than 10 PLURA.
                             </Text>
                         </View>
                     </View>

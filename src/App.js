@@ -103,7 +103,7 @@ const TransferNavigator = createStackNavigator(
                 color: Themes.darkMode.primaryColour,
             },
             headerTransparent: true,
-            headerTintColor: Themes.darkMode.primaryColour,
+            headerTintColor: Themes.darkMode.primaryColour
         },
     }
 );
@@ -145,7 +145,7 @@ const SettingsNavigator = createStackNavigator(
                 color: Themes.darkMode.primaryColour,
             },
             headerTransparent: true,
-            /*headerTintColor: Themes.darkMode.primaryColour,*/
+            headerTintColor: Themes.darkMode.primaryColour,
         },
     }
 );
@@ -300,7 +300,10 @@ const LoginNavigator = createStackNavigator(
                 fontWeight: 'bold',
                 color: Themes.darkMode.primaryColour,
             },
-            /*headerTransparent: true,*/
+            headerStyle: {
+              backgroundColor: '#051e3d'
+            },
+            headerTransparent: true,
             headerTintColor: Themes.darkMode.primaryColour,
         },
     }

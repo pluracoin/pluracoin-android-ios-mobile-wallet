@@ -15,7 +15,6 @@ export async function getCoinPriceFromAPI() {
 
     /* custom cache to bypass Coingecko's possible rate limitting */
     const random = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);;
-    //let uri = 'https://pluracoin.org/mobile-wallet/price.txt?' + random;
     let uri = 'https://mw-api-eu.pluracoin.org:443/price/' + random;
     console.log(uri)
 

@@ -24,6 +24,7 @@ import { FadeView } from './FadeView';
 import { setHaveWallet, savePreferencesToDatabase } from './Database';
 import { BottomButton } from './SharedComponents';
 import { navigateWithDisabledBack } from './Utilities';
+import {Themes} from "./Themes";
 
 /* Dummy component that redirects to pin auth or hardware auth as appropriate */
 export async function Authenticate(navigation, subtitle, finishFunction, disableBack = false) {
@@ -76,6 +77,7 @@ const authErrorToHumanError = new Map([
 ]);
 
 export class RequestHardwareAuthScreen extends React.Component {
+
     constructor(props) {
         super(props);
 
@@ -218,6 +220,12 @@ export class RequestHardwareAuthScreen extends React.Component {
 }
 
 export class ChooseAuthMethodScreen extends React.Component {
+
+    static navigationOptions = {
+        title: '',
+        headerTransparent: true
+    };
+
     constructor(props) {
         super(props);
 
@@ -235,7 +243,7 @@ export class ChooseAuthMethodScreen extends React.Component {
                     alignItems: 'flex-start',
                     justifyContent: 'flex-start',
                     flex: 1,
-                    marginTop: 60
+                    marginTop: 56,
                 }}>
                     <Image
                         style={Styles.background}
@@ -364,6 +372,7 @@ export class ChooseAuthMethodScreen extends React.Component {
 export class SetPinScreen extends React.Component {
     static navigationOptions = {
         title: '',
+        headerTransparent: true,
     }
 
     constructor(props) {
@@ -409,6 +418,7 @@ export class SetPinScreen extends React.Component {
 export class ForgotPinScreen extends React.Component {
     static navigationOptions = {
         title: '',
+        headerTransparent: true,
     }
 
     constructor(props) {
@@ -482,6 +492,7 @@ export class ForgotPinScreen extends React.Component {
 export class RequestPinScreen extends React.Component {
     static navigationOptions = {
         title: '',
+        headerTransparent: true,
     }
 
     constructor(props) {
