@@ -60,7 +60,7 @@ An example of a URI containing all of the above parameters:
 pluracoin://Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9?amount=2100000000000&name=Starbucks%20Coffee&paymentid=f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402
 ```
 
-This would send `210 PLURA` (12700000000000 in atomic units) to the address `Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9`, using the name `Starbucks Coffee` (Note the URI encoding), and using a payment ID of `f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402`
+This would send `210 PLURA` (2100000000000 in atomic units) to the address `Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9`, using the name `Starbucks Coffee` (Note the URI encoding), and using a payment ID of `f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402`
 
 You can also just display the URI as a hyperlink. If a user clicks the link, it will open the app, and jump to the confirm screen, just as a QR code would function. (Provided all the fields are given)
 
